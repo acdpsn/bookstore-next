@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* monokai */
+  --dark-gray: #2e2e2e;
+  --gray: #797979;
+  --light-gray: #d6d6d6;
+  --yellow: #e5b567;
+  --green: #b4d273;
+  --orange: #e87d3e;
+  --purple: #9e86c8;
+  --pink: #b05279;
+  --blue: #6c99bb;
+
+  --foreground: var(--light-gray);
+  --background: var(--dark-gray);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
