@@ -1,0 +1,22 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+}
+
+.item {
+  margin: 0 8px;
+}
+
+.item:first-of-type{
+  margin: 0 8px 0 0;
+}
+
+.item:last-of-type{
+  margin: 0 0 0 8px;
+}
+
+.loggedInStatus {
+  color: var(--brightRed);
+}
