@@ -3,23 +3,22 @@ import styles from "./style.module.css";
 import CenterContent from "../CenterContent/CenterContent";
 
 const Header = () => (
-  <CenterContent bgcolor="#34352f">
-    <div className={styles.row}>
-      <div className={styles.item}>
-        <p>Logged in state:&nbsp;
-          <span className={styles.loggedInStatus}>false</span>
-        </p>
-      </div>
+  <header className={styles.header}>
+    <CenterContent>
+      <div className={styles.row}>
+        <ul className={styles.list}>
+          <li className={styles.listItem}>
+            <Link href="/">Home</Link>
+          </li>
 
-      <div className={styles.item}>
-        <Link href="/">Home</Link>
+          <li className={styles.listItem}>
+            <p>Logged in state: <span className={styles.loggedInStatus}>false</span>
+            </p>
+          </li>
+        </ul>
       </div>
-
-      <div className={styles.item}>
-        <Link href="/about">About</Link>
-      </div>
-    </div>
-  </CenterContent>
+    </CenterContent>
+  </header>
 );
 
 export default Header;

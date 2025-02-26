@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Atkinson_Hyperlegible } from "next/font/google";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 import CenterContent from "@/components/CenterContent/CenterContent";
 import "./globals.css";
 
@@ -33,8 +34,7 @@ export default function RootLayout({
           </CenterContent>
         </main>
 
-        <footer>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

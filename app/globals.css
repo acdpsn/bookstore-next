@@ -38,6 +38,9 @@
   --warningBorder: #e2e22e;
   --infoBackground: #546190;
   --infoBorder: #819aff;
+
+  --headerBackground: #34352f;
+  --footerBackground: #34352f;
 }
 
 body {
