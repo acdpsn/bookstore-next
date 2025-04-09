@@ -3,39 +3,38 @@ import { Atkinson_Hyperlegible } from "next/font/google";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import CenterContent from "@/components/CenterContent/CenterContent";
+import FullPage from "@/components/FullPage/FullPage";
 import "./globals.css";
 
 const atkinsonHyperligible = Atkinson_Hyperlegible({
-  variable: "--font-atkinson-hyperlegible",
-  subsets: ["latin"],
-  weight: "400"
+	variable: "--font-atkinson-hyperlegible",
+	subsets: ["latin"],
+	weight: "400",
 });
 
 export const metadata: Metadata = {
-  title: "Bookstore App",
-  description: "Nextjs playground",
+	title: "Bookstore App",
+	description: "Nextjs playground",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${atkinsonHyperligible.variable} antialiased`}
-      >
-        <Header />
+	return (
+		<html lang="en">
+			<body className={`${atkinsonHyperligible.variable} antialiased`}>
+				<FullPage>
+					<Header />
 
-        <main>
-          <CenterContent>
-            {children}
-          </CenterContent>
-        </main>
+					<main>
+						<CenterContent>{children}</CenterContent>
+					</main>
+				</FullPage>
 
-        <Footer />
-      </body>
-    </html>
-  );
+				<Footer />
+			</body>
+		</html>
+	);
 }

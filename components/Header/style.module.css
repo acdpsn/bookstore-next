@@ -1,34 +1,36 @@
 .header {
-  background-color: var(--headerBackground);
-  height: 56px;
+	background-color: var(--headerBackground);
+	height: 56px;
 }
 
 .row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: left;
-  width: 100%;
-  height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: left;
+	width: 100%;
+	height: 100%;
 }
 
 .list {
-  width: 100%;
+	width: 100%;
+	padding: 0;
+	list-style: none;
 }
 
 .listItem {
-  margin: 0 8px;
-  display: inline-block;
+	margin: 0 8px;
+	display: inline-block;
 }
 
 .listItem:first-of-type {
-  margin: 0 8px 0 0;
+	margin: 0 8px 0 0;
 }
 
 .listItem:last-of-type {
-  margin: 0 0 0 8px;
+	margin: 0 0 0 8px;
 }
 
 .loggedInStatus {
-  color: var(--brightRed);
+	color: var(--brightRed);
 }

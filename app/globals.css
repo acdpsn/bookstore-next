@@ -1,64 +1,64 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  /* colors based on vscode monokai theme */
-  --white: #e3e3dd;
-  --gray: #797979;
-  --black: #333333;
-  --red: #c4265e;
-  --orange: #da6c2d;
-  --yellow: #b3b42b;
-  --green: #86b42b;
-  --cyan: #56adbc;
-  --blue: #6a7ec8;
-  --magenta: #8c6bc8;
-  --brightWhite: #f8f8f2;
-  --brightGray: #a8a8a8;
-  --brightBlack: #666666;
-  --honeydew: #f0fff0;
-  --brightRed: #f92672;
-  --brightOrange: #ff8138;
-  --brightYellow: #e2e22e;
-  --brightGreen: #a6e22e;
-  --brightCyan: #66d9ef;
-  --brightBlue: #819aff;
-  --brightMagenta: #ae81ff;
+	/* colors based on vscode monokai theme */
+	--white: #e3e3dd;
+	--gray: #797979;
+	--black: #333333;
+	--red: #c4265e;
+	--orange: #da6c2d;
+	--yellow: #b3b42b;
+	--green: #86b42b;
+	--cyan: #56adbc;
+	--blue: #6a7ec8;
+	--magenta: #8c6bc8;
+	--brightWhite: #f8f8f2;
+	--brightGray: #a8a8a8;
+	--brightBlack: #666666;
+	--honeydew: #f0fff0;
+	--brightRed: #f92672;
+	--brightOrange: #ff8138;
+	--brightYellow: #e2e22e;
+	--brightGreen: #a6e22e;
+	--brightCyan: #66d9ef;
+	--brightBlue: #819aff;
+	--brightMagenta: #ae81ff;
 
-  --foreground: #f8f8f2;
-  --focus: #75715e;
-  --selection: #414339;
-  --background: #272822;
-  --border: #1e1f1c;
+	--foreground: #f8f8f2;
+	--focus: #75715e;
+	--selection: #414339;
+	--background: #272822;
+	--border: #1e1f1c;
 
-  --errorBackground: #90274a;
-  --errorBorder: #f92672;
-  --warningBackground: #848528;
-  --warningBorder: #e2e22e;
-  --infoBackground: #546190;
-  --infoBorder: #819aff;
+	--errorBackground: #90274a;
+	--errorBorder: #f92672;
+	--warningBackground: #848528;
+	--warningBorder: #e2e22e;
+	--infoBackground: #546190;
+	--infoBorder: #819aff;
 
-  --headerBackground: #34352f;
-  --footerBackground: #34352f;
+	--headerBackground: #34352f;
+	--footerBackground: #34352f;
 }
 
+html,
 body {
-  font-family: 'Atkinson Hyperlegible', Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-  font-weight: normal;
-  color: var(--foreground);
-  background: var(--background);
+	font-family: "Atkinson Hyperlegible", Inter, Roboto, "Helvetica Neue",
+		"Arial Nova", "Nimbus Sans", Arial, sans-serif;
+	font-weight: normal;
+	color: var(--foreground);
+	background: var(--background);
+	height: 100%;
+	margin: 0;
 }
 
 h1 {
-  font-size: 48px;
+	font-size: 48px;
 }
 
 a {
-  color: var(--brightGreen);
-  text-decoration: underline;
+	color: var(--brightGreen);
+	text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: none;
+	text-decoration: none;
 }

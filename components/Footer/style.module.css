@@ -1,3 +1,8 @@
 .footer {
-  background-color: var(--footerBackground);
+	background-color: var(--footerBackground);
+}
+
+.list {
+	padding: 0;
+	list-style: none;
 }

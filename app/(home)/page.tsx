@@ -1,13 +1,18 @@
 import LoginForm from "./LoginForm/LoginForm";
 
 const Home = () => (
-  <>
-    <LoginForm />
+	<>
+		<LoginForm />
 
-    <h1>Bookstore</h1>
+		<h1>Bookstore</h1>
 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aperiam cum voluptatibus doloremque accusamus ab! Consequatur atque vel nihil ipsa, officia non qui praesentium ipsam alias totam voluptatum perferendis odio.</p>
-  </>
+		<p>
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
+			doloremque, iusto voluptates quas minima ratione impedit vel deserunt
+			dignissimos laboriosam laborum corporis facilis nisi voluptate animi
+			cumque suscipit facere eos.
+		</p>
+	</>
 );
 
 export default Home;

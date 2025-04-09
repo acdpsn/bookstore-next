@@ -1,9 +1,9 @@
 const NotFound = () => (
-  <div>
-    <h2>Not Found</h2>
+	<div>
+		<h2>Not Found</h2>
 
-    <p>Could not find requested resource</p>
-  </div>
+		<p>Could not find requested resource</p>
+	</div>
 );
 
 export default NotFound;
