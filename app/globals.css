@@ -43,7 +43,6 @@ html,
 body {
 	font-family: "Atkinson Hyperlegible", Inter, Roboto, "Helvetica Neue",
 		"Arial Nova", "Nimbus Sans", Arial, sans-serif;
-	font-weight: normal;
 	color: var(--foreground);
 	background: var(--background);
 	height: 100%;
@@ -56,7 +55,6 @@ h1 {
 
 a {
 	color: var(--brightGreen);
-	text-decoration: underline;
 }
 
 a:hover {
