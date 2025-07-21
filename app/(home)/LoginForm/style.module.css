@@ -1,0 +1,15 @@
+.form {
+	display: flex;
+}
+
+.form > * {
+	margin: 0 2px;
+}
+
+.form > *:first-child {
+	margin-left: 0;
+}
+
+.form > *:last-child {
+	margin-right: 0;
+}

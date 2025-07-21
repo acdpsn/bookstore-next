@@ -1,6 +1,7 @@
+import { Search } from "lucide-react";
 import Link from "next/link";
-import styles from "./style.module.css";
 import CenterContent from "../CenterContent/CenterContent";
+import styles from "./style.module.css";
 
 const Header = () => (
 	<header className={styles.header}>
@@ -8,16 +9,36 @@ const Header = () => (
 			<div className={styles.row}>
 				<ul className={styles.list}>
 					<li className={styles.listItem}>
-						<Link href="/">Home</Link>
+						<p>
+							<Link href="/">Home</Link>
+						</p>
 					</li>
 
 					<li className={styles.listItem}>
 						<p>
-							Logged in state:&nbsp;
-							<span className={styles.loggedInStatus}>false</span>
+							<Link href="/collection">Collection</Link>
+						</p>
+					</li>
+
+					<li className={styles.listItem}>
+						<p>
+							<Link href="/account">Account</Link>
 						</p>
 					</li>
 				</ul>
+
+				<div className={styles.rightAlign}>
+					<input
+						type="text"
+						name="searchBox"
+						placeholder="Enter a search term..."
+					/>
+
+					<button type="submit" className={styles.searchButton}>
+						<Search className={styles.searchIcon} strokeWidth={2.5} />
+						Search
+					</button>
+				</div>
 			</div>
 		</CenterContent>
 	</header>

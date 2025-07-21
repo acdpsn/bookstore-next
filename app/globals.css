@@ -41,15 +41,18 @@
 
 html,
 body {
-	font-family: "Atkinson Hyperlegible", Inter, Roboto, "Helvetica Neue",
-		"Arial Nova", "Nimbus Sans", Arial, sans-serif;
 	color: var(--foreground);
 	background: var(--background);
+	font-family:
+		"Atkinson Hyperlegible", Inter, Roboto, "Helvetica Neue", "Arial Nova",
+		"Nimbus Sans", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.6;
 	height: 100%;
 	margin: 0;
 }
 
-h1 {
+.largeHeading {
 	font-size: 48px;
 }
 
@@ -59,4 +62,19 @@ a {
 
 a:hover {
 	text-decoration: none;
+}
+
+button {
+	background-color: var(--green);
+	border: 1px solid var(--brightGreen);
+	border-style: outset;
+	border-radius: 2px;
+	font-size: 15.4px;
+}
+
+input,
+textarea {
+	font-family:
+		"Atkinson Hyperlegible", Inter, Roboto, "Helvetica Neue", "Arial Nova",
+		"Nimbus Sans", Arial, sans-serif;
 }

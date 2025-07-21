@@ -13,7 +13,6 @@
 }
 
 .list {
-	width: 100%;
 	padding: 0;
 	list-style: none;
 }
@@ -31,6 +30,19 @@
 	margin: 0 0 0 8px;
 }
 
-.loggedInStatus {
-	color: var(--brightRed);
+.rightAlign {
+	margin-left: auto;
+	display: flex;
+}
+
+.searchButton {
+	margin-left: 4px;
+	display: flex;
+	align-items: center;
+}
+
+.searchIcon {
+	width: 1em;
+	height: 1em;
+	margin-right: 4px;
 }

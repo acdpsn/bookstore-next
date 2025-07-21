@@ -1,0 +1,11 @@
+.container {
+	color: var(--brightGreen);
+	display: inline-flex;
+	align-items: center;
+}
+
+.icon {
+	width: 1em;
+	height: 1em;
+	margin-left: 4px;
+}
