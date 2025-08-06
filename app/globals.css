@@ -36,7 +36,7 @@
 	--infoBorder: #819aff;
 
 	--headerBackground: #34352f;
-	--footerBackground: #34352f;
+	--footerBackground: #1e1f1c;
 }
 
 html,
@@ -44,16 +44,12 @@ body {
 	color: var(--foreground);
 	background: var(--background);
 	font-family:
-		"Atkinson Hyperlegible", Inter, Roboto, "Helvetica Neue", "Arial Nova",
-		"Nimbus Sans", Arial, sans-serif;
+		var(--font-atkinson-hyperlegible), Inter, Roboto, "Helvetica Neue",
+		"Arial Nova", "Nimbus Sans", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 1.6;
 	height: 100%;
 	margin: 0;
-}
-
-.largeHeading {
-	font-size: 48px;
 }
 
 a {
@@ -75,6 +71,6 @@ button {
 input,
 textarea {
 	font-family:
-		"Atkinson Hyperlegible", Inter, Roboto, "Helvetica Neue", "Arial Nova",
-		"Nimbus Sans", Arial, sans-serif;
+		var(--font-atkinson-hyperlegible), Inter, Roboto, "Helvetica Neue",
+		"Arial Nova", "Nimbus Sans", Arial, sans-serif;
 }

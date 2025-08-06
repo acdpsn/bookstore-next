@@ -7,10 +7,8 @@ type ExternalLinkProps = {
 	href: string;
 };
 
-const ExternalLink = ({ children, href }: ExternalLinkProps) => (
+export const ExternalLink = ({ children, href }: ExternalLinkProps) => (
 	<Link href={href} className={styles.container}>
 		{children} <ExtLinkIcon className={styles.icon} strokeWidth={2.5} />
 	</Link>
 );
-
-export default ExternalLink;

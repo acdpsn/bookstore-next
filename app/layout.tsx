@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Atkinson_Hyperlegible } from "next/font/google";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
-import CenterContent from "@/components/CenterContent/CenterContent";
-import FullPage from "@/components/FullPage/FullPage";
+import { CenterContent, Footer, FullPage, Header } from "@/components";
 import "./globals.css";
 
 const atkinsonHyperligible = Atkinson_Hyperlegible({
@@ -24,7 +21,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${atkinsonHyperligible.variable} antialiased`}>
+			<body className={atkinsonHyperligible.variable}>
 				<FullPage>
 					<Header />
 

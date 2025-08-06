@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 
-const CenterContent = ({
+export const CenterContent = ({
 	children,
 	bgcolor = "transparent",
 }: {
@@ -11,5 +11,3 @@ const CenterContent = ({
 		<div className={styles.content}>{children}</div>
 	</div>
 );
-
-export default CenterContent;

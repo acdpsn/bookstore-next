@@ -1,9 +1,9 @@
 import { Search } from "lucide-react";
 import Link from "next/link";
-import CenterContent from "../CenterContent/CenterContent";
+import { CenterContent } from "../CenterContent/CenterContent";
 import styles from "./style.module.css";
 
-const Header = () => (
+export const Header = () => (
 	<header className={styles.header}>
 		<CenterContent>
 			<div className={styles.row}>
@@ -43,5 +43,3 @@ const Header = () => (
 		</CenterContent>
 	</header>
 );
-
-export default Header;
