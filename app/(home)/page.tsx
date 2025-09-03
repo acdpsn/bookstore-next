@@ -1,3 +1,4 @@
+import { Shelf } from "@/components";
 import LoginForm from "./LoginForm/LoginForm";
 import styles from "./style.module.css";
 
@@ -9,11 +10,11 @@ const Home = () => (
 
 		<h2>New</h2>
 
-		<p>todo</p>
+		<Shelf category="author" term="R. L. Stine" />
 
 		<h2>Trending</h2>
 
-		<p>todo</p>
+		<Shelf category="author" term="J. R. R. Tolkien" />
 	</>
 );
 
