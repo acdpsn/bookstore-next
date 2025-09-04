@@ -1,5 +1,5 @@
 import { neon } from '@neondatabase/serverless';
-import { Book } from '@/types';
+import type { Book } from '@/types';
 import { BookBox } from "../BookBox";
 import styles from "./styles.module.css";
 
@@ -17,7 +17,7 @@ export const Shelf = async ({ category, term }: ShelfProps) => {
 
 	const sql = neon(process.env.DATABASE_URL);
 
-	const books = (await sql.query(`select * from catalog.books where ${category} = $1`, [term])) as Book[];
+	const books = (await sql.query(`select * from catalog.books where ${category} = $1 order by title limit $2`, [term, 10])) as Book[];
 
 	return (
 		<div className={styles.shelf}>

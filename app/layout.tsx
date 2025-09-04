@@ -10,8 +10,8 @@ const atkinsonHyperligible = Atkinson_Hyperlegible({
 });
 
 export const metadata: Metadata = {
-	title: "Bookstore App",
-	description: "Nextjs playground",
+	title: "Bookstore",
+	description: "Nextjs app",
 };
 
 export default function RootLayout({
