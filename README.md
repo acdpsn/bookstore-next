@@ -1,4 +1,4 @@
-[![Vercel Deploy](https://deploy-badge.vercel.app/vercel/bkstr?style=plastic)](https://bkstr.vercel.app)
+[![Vercel Deploy](https://deploy-badge.vercel.app/vercel/bkstr?style=plastic)](https://bookstoren.vercel.app/)
 [![Linted with Biome](https://img.shields.io/badge/Linted_with-Biome-60a5fa?style=plastic&logo=biome)](https://biomejs.dev)
 
 start app:\
@@ -7,3 +7,6 @@ start app:\
 update packages:\
 `npx npm-check-updates -u`\
 `npm install`
+
+---
+[book dataset](https://www.kaggle.com/datasets/saurabhbagchi/books-dataset)

@@ -9,19 +9,15 @@ export interface BookProps {
 	book: Book;
 }
 
+const charCodeTotal = (title: string): number => {
+	return title.charCodeAt(0) + (title.length > 1 ? charCodeTotal(title.substring(1)) : 0)
+}
+
 export const BookBox = ({ book }: BookProps) => {
 	const [isImageMissing, setIsImageMissing] = useState(false);
 	const imgUrl = book.image_url_l?.replace("http:", "https:");
 
-	// let i = book.title.length;
-	let a = 0;
-	// while (i--) {
-	// 	a += book.title.charCodeAt(i)
-	// }
-
-	for (let i = 0; i < book.title.length; i++) {
-		a += book.title.charCodeAt(i);
-	}
+	const total = charCodeTotal(book.title);
 
 	const onLoad = (image: HTMLImageElement) => {
 		// amazon provides a 1x1 image for missing covers
@@ -31,7 +27,7 @@ export const BookBox = ({ book }: BookProps) => {
 	}
 
 	return isImageMissing ? (
-		<div className={styles.placeholder} style={{ filter: `hue-rotate(${a}deg)` }}>
+		<div className={styles.placeholder} style={{ filter: `hue-rotate(${total}deg)` }}>
 			<p>{book.title}</p>
 		</div>
 	) : (
@@ -43,6 +39,7 @@ export const BookBox = ({ book }: BookProps) => {
 			height={0}
 			unoptimized
 			onLoad={(e) => onLoad(e.target as HTMLImageElement)}
+			loading="eager"
 		/>
 	)
 }

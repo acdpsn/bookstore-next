@@ -46,3 +46,13 @@
 	height: 1em;
 	margin-right: 4px;
 }
+
+@media (max-width: 600px) {
+	.list {
+		display: none;
+	}
+
+	.rightAlign {
+		display: none;
+	}
+}

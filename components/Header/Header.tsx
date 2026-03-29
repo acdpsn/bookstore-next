@@ -10,7 +10,7 @@ export const Header = () => (
 				<ul className={styles.list}>
 					<li className={styles.listItem}>
 						<p>
-							<Link href="/">Home</Link>
+							<Link href="/">Bookstore</Link>
 						</p>
 					</li>
 

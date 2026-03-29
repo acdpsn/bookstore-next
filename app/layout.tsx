@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
-import { Atkinson_Hyperlegible } from "next/font/google";
+import { Geist, PT_Serif } from "next/font/google";
 import { CenterContent, Footer, FullPage, Header } from "@/components";
 import "./globals.css";
 
-const atkinsonHyperligible = Atkinson_Hyperlegible({
-	variable: "--font-atkinson-hyperlegible",
+const geistSans = Geist({
+	variable: "--font-geist-sans",
 	subsets: ["latin"],
-	weight: "400",
+});
+
+const ptSerif = PT_Serif({
+	variable: "--font-pt-serif",
+	subsets: ["latin"],
+	weight: "400"
 });
 
 export const metadata: Metadata = {
@@ -21,7 +26,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={atkinsonHyperligible.variable}>
+			<body className={`${geistSans.variable} ${ptSerif.variable} antialiased`}>
 				<FullPage>
 					<Header />
 

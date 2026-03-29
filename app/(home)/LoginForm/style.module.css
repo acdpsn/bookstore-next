@@ -14,3 +14,27 @@
 .form > *:last-child {
 	margin-right: 0;
 }
+
+@media (max-width: 600px) {
+	.form {
+		flex-direction: column;
+	}
+
+	.form > * {
+		margin: 0;
+		height: 36px;
+	}
+
+	.form > .username {
+		border-radius: 8px 8px 0 0;
+	}
+
+	.form > .password {
+		border-radius: 0 0 8px 8px;
+	}
+
+	.form > .login {
+		margin-top: 20px;
+		border-radius: 8px;
+	}
+}
